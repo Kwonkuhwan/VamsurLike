@@ -11,14 +11,12 @@ public class PlayerInputController : MonoBehaviour
     private Rigidbody2D rigid2D = null;
     private Animator anim = null;
     private SpriteRenderer[] spriteRenderers = null;
-    private SpriteRenderer spriteRenderer = null;
 
     private Vector2 inputVec = Vector3.zero;
 
-    public GameObject[] objs = null;
     public float speed = 3.0f;
 
-    #region Unity �Լ�
+    #region Unity 함수
 
     private void Awake()
     {
@@ -68,7 +66,7 @@ public class PlayerInputController : MonoBehaviour
 
     #endregion
 
-    #region Actions �Լ�
+    #region Actions 함수
     private void OnPlayerMove(InputAction.CallbackContext context)
     {
         inputVec = context.ReadValue<Vector2>();
