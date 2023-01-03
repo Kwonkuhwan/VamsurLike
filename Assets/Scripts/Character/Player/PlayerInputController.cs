@@ -12,7 +12,7 @@ public class PlayerInputController : MonoBehaviour
     private Animator anim = null;
     private SpriteRenderer[] spriteRenderers = null;
 
-    private Vector2 inputVec = Vector3.zero;
+    public Vector2 inputVec = Vector3.zero;
 
     public float speed = 3.0f;
 
